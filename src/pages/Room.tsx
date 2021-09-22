@@ -1,14 +1,15 @@
 import '../styles/room.scss';
 import { Button } from '../componentes/Button';
 import logoImg from '../assets/imagens/logo.svg'
+import { RoomCode } from '../componentes/RoomCode';
 
 export function Room(){
     return(
-        <div id="page-Room">
+        <div id="page-room">
             <header>
                 <div className="content">
                     <img src={logoImg} alt="Letmeask" />
-                    <div>codigo</div>
+                    <RoomCode />
                 </div>
             </header>
 
