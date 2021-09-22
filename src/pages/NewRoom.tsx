@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
 import { Button } from '../componentes/Button';
-
-import illustrationImg from '../assets/imagens/illustration.svg';
-import logoImg from '../assets/imagens/logo.svg';
-import googleIconImg from '../assets/imagens/google-icon.svg';
-import '../styles/auth.scss';   
 import { useContext } from 'react';
 import { AuthContext } from '../App';
+import illustrationImg from '../assets/imagens/illustration.svg';
+import logoImg from '../assets/imagens/logo.svg';
+import '../styles/auth.scss';   
+
 
 
 export function NewRoom(){
