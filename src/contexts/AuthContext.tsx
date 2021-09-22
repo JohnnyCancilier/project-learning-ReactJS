@@ -2,18 +2,18 @@ import { createContext, ReactNode, useEffect, useState } from 'react'
 import { auth, firebase } from "../services/firebase";
 
 type User = {
-    id: string;
-    name: string;
-    avatar: string
+  id: string;
+  name: string;
+  avatar: string
 }
   
 type AuthContextType = {
-    user: User | undefined;
-    singInWithGoogle: () => Promise<void>;
+  user: User | undefined;
+  singInWithGoogle: () => Promise<void>;
 }
 
 type AuthContextProvinderProps = {
-      childreen: ReactNode;
+  children: ReactNode;
 }
 
 export const AuthContext = createContext({} as AuthContextType);
@@ -61,7 +61,7 @@ async function singInWithGoogle(){
     
     return(
         <AuthContext.Provider value={{user, singInWithGoogle}}>
-            {props.childreen}
+            {props.children}
         </AuthContext.Provider>
     );
 }

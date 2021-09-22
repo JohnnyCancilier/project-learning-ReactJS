@@ -1,15 +1,14 @@
 import { Link } from 'react-router-dom';
 import { Button } from '../componentes/Button';
-import { useContext } from 'react';
-import { AuthContext } from '../App';
 import illustrationImg from '../assets/imagens/illustration.svg';
 import logoImg from '../assets/imagens/logo.svg';
 import '../styles/auth.scss';   
+//import { useAuth } from '../hooks/useAuth';
 
 
 
 export function NewRoom(){
-    const { user } = useContext(AuthContext); 
+    //const { user } = useAuth();
 
     return (
         <div id="page-auth">
@@ -21,7 +20,6 @@ export function NewRoom(){
             <main>
                 <div className="main-content">
                     <img src={logoImg} alt="Logo Letmeask" />
-                    <h1>{user?.name}</h1>
                     <h2>Criar uma nova sala</h2>
                     <form>
                         <input 
