@@ -26,7 +26,7 @@ export function NewRoom(){
                             type="text"
                             placeholder="Nome da sala"
                         />
-                        <Button type="submit">
+                        <Button type="submit">  
                             Criar sala
                         </Button>
                     </form>
