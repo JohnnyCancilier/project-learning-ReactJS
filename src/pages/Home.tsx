@@ -9,6 +9,7 @@ import logoImg from '../assets/imagens/logo.svg';
 import googleIconImg from '../assets/imagens/google-icon.svg';
 
 export function Home(){
+
     const history = useHistory();
     const { user, singInWithGoogle } = useAuth();
     const [roomCode, setRoomCode] = useState('');
